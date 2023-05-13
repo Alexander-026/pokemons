@@ -1,0 +1,9 @@
+.pokemon {
+  text-align: center;
+  &Stats {
+    text-align: left;
+    &Value {
+      margin-left: 1rem;
+    }
+  }
+}
