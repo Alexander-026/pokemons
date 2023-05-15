@@ -20,7 +20,7 @@ const Home = () => {
     useAppSelector((state) => state.pokemons)
   const dispatch = useAppDispatch()
   useGetPokemonsQuery({
-    offset: current > 1 ? pageSize * current : 0,
+    offset: current > 1 ? pageSize * current - pageSize : 0,
     limit: pageSize,
   })
 
